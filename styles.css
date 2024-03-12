@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: skyblue;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    margin: 20px auto;
+    max-width: 306px;
+}
+
+.cell {
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.message {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#resetButton {
+    font-size: 1em;
+    padding: 10px 20px;
+    cursor: pointer;
+}
